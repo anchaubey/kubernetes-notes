@@ -41,18 +41,25 @@
 	  ports:
 
 # File marks:
-'0  9  12  ~/replicas/repilicawebapp.yaml
-'1  16  0  ~/services/queue.yaml
-'2  16  0  ~/services/webapp-service.yaml
-'3  1  0  ~/services/webapp-service.yaml
-'4  9  2  ~/services/webapp-service.yaml
-'5  1  0  ~/pods/pods.yaml
-'6  20  0  ~/replicas/repilicawebapp.yaml
-'7  1  0  ~/mkdir
-'8  1  0  ~/pods/pods.yaml
-'9  1  0  ~/pods/pods.yaml
+'0  10  16  ~/services/mysql_service.yaml
+'1  4  12  ~/mysql/network-tests.yaml
+'2  19  71  ~/deployment/deployment.yaml
+'3  6  1  ~/deployment/deployment.yaml
+'4  1  0  ~/deployment/deployment.yaml
+'5  9  12  ~/replicas/repilicawebapp.yaml
+'6  16  0  ~/services/queue.yaml
+'7  16  0  ~/services/webapp-service.yaml
+'8  1  0  ~/services/webapp-service.yaml
+'9  9  2  ~/services/webapp-service.yaml
 
 # Jumplist (newest first):
+-'  10  16  ~/services/mysql_service.yaml
+-'  1  0  ~/services/mysql_service.yaml
+-'  4  12  ~/mysql/network-tests.yaml
+-'  1  0  ~/mysql/network-tests.yaml
+-'  19  71  ~/deployment/deployment.yaml
+-'  1  0  ~/deployment/deployment.yaml
+-'  6  1  ~/deployment/deployment.yaml
 -'  9  12  ~/replicas/repilicawebapp.yaml
 -'  1  0  ~/replicas/repilicawebapp.yaml
 -'  16  0  ~/services/queue.yaml
@@ -145,10 +152,33 @@
 -'  35  56  ~/pods/first-pod.yaml
 -'  1  0  ~/pods/pods.yaml
 -'  1  0  ~/mkdir
--'  11  0  ~/pods/pods.yaml
--'  16  0  ~/services/webapp-service.yaml
 
 # History of marks within files (newest to oldest):
+
+> ~/services/mysql_service.yaml
+	"	10	16
+	^	10	17
+	.	10	16
+	+	10	16
+
+> ~/mysql/network-tests.yaml
+	"	4	12
+	^	4	13
+	.	4	12
+	+	16	24
+	+	4	12
+
+> ~/deployment/deployment.yaml
+	"	19	71
+	^	19	72
+	.	19	71
+	+	2	15
+	+	10	12
+	+	19	71
+	+	6	20
+	+	19	70
+	+	6	1
+	+	19	71
 
 > ~/replicas/repilicawebapp.yaml
 	"	9	12

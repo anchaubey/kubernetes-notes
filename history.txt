@@ -66,3 +66,235 @@ EOF
    61  cd ..
    62  ll
    63  history > history.txt
+   64  git init
+   65  git add .
+   66  git status
+   67  git remote add origin "https://github.com/anchaubey/kubernetes-notes.git"
+   68  git pull origin master
+   69  git commit -m "first commit"
+   70  git config --global user.email "ankit.chaubey@gmail.com"
+   71  git config --global user.name "anchaubey"
+   72  git commit -m "first commit"
+   73  git push origin master
+   74  cd pods/
+   75  vi first-pod.yaml 
+   76  vi ../services/webapp-service.yaml 
+   77  cd
+   78  kubectl apply -f pods/first-pod.yaml 
+   79  kubectl apply -f services/webapp-service.yaml 
+   80  vi services/webapp-service.yaml 
+   81  kubectl apply -f services/webapp-service.yaml 
+   82  kubectl apply -f pods/first-pod.yaml 
+   83  vi pods/first-pod.yaml 
+   84  kubectl apply -f pods/first-pod.yaml 
+   85  kubectl describe svc fleetman-webapp
+   86  kubectl get all
+   87  ifconfig 
+   88  kubectl describe svc fleetman-webapp
+   89  kubectl apply -f services/webapp-service.yaml 
+   90  vi services/webapp-service.yaml 
+   91  vi pods/first-pod.yaml 
+   92  kubectl apply pods/first-pod.yaml 
+   93  kubectl apply -f pods/first-pod.yaml 
+   94  kubectl apply -f services/webapp-service.yaml 
+   95  vi services/webapp-service.yaml 
+   96  kubectl get all
+   97  kubectl get po --show-labels
+   98  vi pods/first-pod.yaml 
+   99  kubectl get po --show-labels -l release=0-5
+  100  kubectl get svc
+  101  kubectl get svc --show-labels
+  102  git add .
+  103  git commit -m "added labels"
+  104  git push origin master
+  105  vi pods/first-pod.yaml 
+  106  vi services/webapp-service.yaml 
+  107  kubectl apply -f services/webapp-service.yaml 
+  108  vi services/webapp-service.yaml 
+  109  kubectl apply -f services/webapp-service.yaml 
+  110  kubectl apply -f pods/first-pod.yaml 
+  111  vi pods/first-pod.yaml 
+  112  kubectl apply -f pods/first-pod.yaml 
+  113  kubectl get pods
+  114  kubectl describe pod queue
+  115  kubectl get pods
+  116  kubectl describe pod queue
+  117  kubectl get pods
+  118  kubectl get svc
+  119  kubectl get all
+  120  kubectl describe svc fleetman-webapp
+  121  kubectl get all
+  122  git add .
+  123  git commit -m "done"
+  124  git push origin master
+  125  mv pods/first-pod.yaml pods/pods.yaml
+  126  vi pods/pods.yaml 
+  127  cp pods/pods.yaml pods/pods.yaml.bkp
+  128  vi pods/pods.yaml 
+  129  kubectl apply -f pods/pods.yaml
+  130  vi pods/pods.yaml 
+  131  kubectl delete -f pods/pods.yaml
+  132  kubectl get all
+  133  kubectl delete -f pods/pods.yaml
+  134  kubectl delete po pod/webapp
+  135  kubectl delete pod' pod/webapp
+  136  kubectl delete pod pod/webapp
+  137  kubectl delete po --all
+  138  kubectl get all
+  139  kubectl apply -f pods/pods.yaml
+  140  kubectl get all
+  141  kubectl get replicas
+  142  kubectl get replicaset
+  143  kubectl get all
+  144  vi pods/pods.yaml
+  145  kubectl get all
+  146  vi pods/pods.yaml
+  147  kubectl get all
+  148  kubectl delete -f pods/pods.yaml
+  149  kubectl create -f pods/pods.yaml
+  150  cat pods/pods.yaml
+  151  mkdir backupfiles
+  152  cp pods/pods.yaml.bkp backupfiles/
+  153  rm pods/pods.yaml.bkp 
+  154  kubectl create -f pods/pods.yaml
+  155  kubectl delete -f pods/pods.yaml
+  156  vi pods/pods.yaml 
+  157  vi mkdir replicas
+  158  mkdir replicas
+  159  vi replicas/repilicawebapp.yaml
+  160  kubectl apply -f replicas/repilicawebapp.yaml 
+  161  kubectl pods/pods.yaml 
+  162  kubectl apply -f pods/pods.yaml 
+  163  kubectl apply -f services/webapp-service.yaml 
+  164  cat replicas/repilicawebapp.yaml 
+  165  cat services/webapp-service.yaml 
+  166  kubectl get pods
+  167  kubectl get svc
+  168  kubectl get all
+  169  cat backupfiles/pods.yaml.bkp 
+  170  cat replicas/repilicawebapp.yaml 
+  171  cat pods/pods.yaml 
+  172  cat services/webapp-service.yaml 
+  173  cat replicas/repilicawebapp.yaml 
+  174  curl localhost:30080
+  175  sudo apt install elinks
+  176  elinks http:localhost:30080
+  177  ifconfig 
+  178  kubectl get pods
+  179  kubectl delete -f replicas/repilicawebapp.yaml 
+  180  kubectl delete -f pods/pods.yaml 
+  181  cat replicas/repilicawebapp.yaml 
+  182  vi pods/pods.yaml 
+  183  kubectl apply -f pods/pods.yaml 
+  184  kubectl get replica
+  185  kubectl get replicas
+  186  kubectl get rs
+  187  kubectl get all
+  188  kubectl delete -f pods/pods.yaml 
+  189  vi pods/pods.yaml 
+  190  kubectl apply -f replicas/repilicawebapp.yaml 
+  191  kubectl apply -f pods/pods.yaml 
+  192  kubectl get all
+  193  kubectl describe es webapp
+  194  kubectl describe rs webapp
+  195  vi services/webapp-service.yaml 
+  196  kubectl apply -f services/webapp-service.yaml 
+  197  vi services/webapp-service.yaml 
+  198  kubectl get all
+  199  kubectl apply -f services/webapp-service.yaml 
+  200  kubectl get all
+  201  vi services/webapp-service.yaml 
+  202  kubectl apply -f services/webapp-service.yaml 
+  203  vi services/webapp-service.yaml 
+  204  kubectl delete -f services/webapp-service.yaml 
+  205  kubectl apply -f services/webapp-service.yaml 
+  206  kubectl get all
+  207  cat services/webapp-service.yaml 
+  208  vi services/webapp-service.yaml 
+  209  vi services/queue.yaml
+  210  kubectl delete -f services/webapp-service.yaml 
+  211  kubectl delete -f services/queue.yaml 
+  212  kubectl apply -f services/webapp-service.yaml 
+  213  kubectl apply -f services/queue.yaml 
+  214  kubectl get all
+  215  vi replicas/repilicawebapp.yaml 
+  216  kubectl apply -f replicas/repilicawebapp.yaml 
+  217  kubectl get all
+  218  kubectl describe rs
+  219  kubectl delete rs webapp-bvn4c
+  220  kubectl delete  webapp-bvn4c
+  221  kubectl get all
+  222  kubectl describe rs
+  223  kubectl delete po webapp-bvn4c
+  224  kubectl get all
+  225  kubectl get all --o -wide
+  226  kubectl get all -o wide
+  227  pwd
+  228  git init .
+  229  git add .
+  230  git commit -m "more files added"
+  231  ls -la
+  232  git push origin master
+  233  mkdir deployment
+  234  cp replicas/repilicawebapp.yaml deployment/deployment.yaml
+  235  vi deployment/deployment.yaml 
+  236  kubectl get all
+  237  kubectl delete rs webapp
+  238  kubectl get all
+  239  vi deployment/deployment.yaml 
+  240* kubectl apply -f deployment/deployment.yaml 
+  241  kubectl get all
+  242  vi deployment/deployment.yaml 
+  243  kubectl apply -f deployment/deployment.yaml 
+  244  kubectl apply -f deployment/deployment.yaml
+  245  kubectl get all
+  246  kubectl rollout status
+  247  kubectl rollout status webapp
+  248  kubectl rollout status deployment webapp
+  249  history > history.txt 
+  250  vi deployment/deployment.yaml 
+  251  kubectl apply -f deployment/deployment.yaml 
+  252  kubectl rollout status deployment webapp
+  253  kubectl rollout history deployment webapp
+  254  kubectl rollout undo deploy webapp 
+  255  kubectl rollout history deployment webapp
+  256  kubectl rollout status deployment webapp
+  257  vi deployment/deployment.yaml 
+  258  kubectl apply -f deployment/deployment.yaml 
+  259  vi deployment/deployment.yaml 
+  260  kubectl apply -f deployment/deployment.yaml 
+  261  vi deployment/deployment.yaml 
+  262  kubectl apply -f deployment/deployment.yaml 
+  263  kubectl get deployment webapp
+  264  df -h
+  265  free -m
+  266  kubectl get all
+  267  kubectl get all namespaces
+  268  kubectl get all -o wide namespaces
+  269  kubectl get namespaces
+  270  kubectl get po 
+  271  kubectl get po -n kube-system
+  272  kubectl get all -n kube-system
+  273  kubectl get ns
+  274  kubectl get all -n kube-public
+  275  kubectl get po 
+  276  kubectl get namespaces
+  277  kubectl get po -n kube-public
+  278  history > history.txt 
+  279  mkdir mysql
+  280  vi mysql/network-tests.yaml
+  281  vi services/mysql_service.yaml
+  282  kubectl apply -f mysql/network-tests.yaml 
+  283  kubectl apply -f services/mysql_service.yaml 
+  284  kubectl get all
+  285  kubectl exec -it webapp-78466b8f6d-chhw5 sh
+  286  kubectl get all
+  287  kubectl exec -it webapp-78466b8f6d-chhw5 sh
+  288  kubectl get all -n kube-system
+  289  kubectl exec -it webapp-78466b8f6d-chhw5 bash
+  290  kubectl exec -it webapp-78466b8f6d-chhw5 sh
+  291  kubectl get all
+  292  kubectl exec -it webapp-78466b8f6d-chhw5 sh
+  293  kubectl get all
+  294  free -m
+  295  history > history.txt 
