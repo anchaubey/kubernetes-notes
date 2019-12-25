@@ -9,8 +9,8 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-:q
 :q!
+:q
 
 # Search String History (newest to oldest):
 
@@ -22,53 +22,194 @@
 
 # Registers:
 ""1	LINE	0
-	---------------
+	apiVersion: v1
 "2	LINE	0
-	-------------------------
+	kind: Service
 "3	LINE	0
-	    release: 0-5
+	metadata:
 "4	LINE	0
-	    release: 0-5
+	  name: fleetman-queue
+"5	LINE	0
+	
+"6	LINE	0
+	spec:
+"7	LINE	0
+	  selector:
+"8	LINE	0
+	    app: queue
+"9	LINE	0
+	  ports:
 
 # File marks:
-'0  25  0  ~/pods/first-pod.yaml
-'1  32  0  ~/services/webapp-service.yaml
-'2  17  0  ~/services/webapp-service.yaml
-'3  35  56  ~/pods/first-pod.yaml
-'4  1  0  ~/pods/first-pod.yaml
-'5  1  0  ~/services/webapp-service.yaml
-'6  19  15  ~/pods/first-pod.yaml
-'7  9  12  ~/services/webapp-service.yaml
-'8  6  8  ~/pods/first-pod.yaml
-'9  15  15  ~/services/webapp-service.yaml
+'0  9  12  ~/replicas/repilicawebapp.yaml
+'1  16  0  ~/services/queue.yaml
+'2  16  0  ~/services/webapp-service.yaml
+'3  1  0  ~/services/webapp-service.yaml
+'4  9  2  ~/services/webapp-service.yaml
+'5  1  0  ~/pods/pods.yaml
+'6  20  0  ~/replicas/repilicawebapp.yaml
+'7  1  0  ~/mkdir
+'8  1  0  ~/pods/pods.yaml
+'9  1  0  ~/pods/pods.yaml
 
 # Jumplist (newest first):
+-'  9  12  ~/replicas/repilicawebapp.yaml
+-'  1  0  ~/replicas/repilicawebapp.yaml
+-'  16  0  ~/services/queue.yaml
+-'  1  0  ~/services/queue.yaml
+-'  16  0  ~/services/webapp-service.yaml
+-'  1  0  ~/services/webapp-service.yaml
+-'  9  2  ~/services/webapp-service.yaml
+-'  1  0  ~/pods/pods.yaml
+-'  20  0  ~/replicas/repilicawebapp.yaml
+-'  1  0  ~/mkdir
+-'  11  0  ~/pods/pods.yaml
 -'  25  0  ~/pods/first-pod.yaml
 -'  1  0  ~/pods/first-pod.yaml
--'  32  0  ~/services/webapp-service.yaml
--'  1  0  ~/services/webapp-service.yaml
 -'  17  0  ~/services/webapp-service.yaml
 -'  35  56  ~/pods/first-pod.yaml
 -'  19  15  ~/pods/first-pod.yaml
--'  9  12  ~/services/webapp-service.yaml
 -'  6  8  ~/pods/first-pod.yaml
--'  15  15  ~/services/webapp-service.yaml
+-'  14  15  ~/services/webapp-service.yaml
 -'  11  65  ~/pods/first-pod.yaml
--'  14  16  ~/services/webapp-service.yaml
+-'  13  16  ~/services/webapp-service.yaml
 -'  9  65  ~/pods/first-pod.yaml
 -'  10  65  ~/pods/first-pod.yaml
 -'  8  65  ~/pods/first-pod.yaml
--'  18  0  ~/services/webapp-service.yaml
--'  32  0  ~/services/webapp-service.yaml
--'  1  0  ~/services/webapp-service.yaml
--'  17  0  ~/services/webapp-service.yaml
 -'  36  56  ~/pods/first-pod.yaml
--'  9  12  ~/services/webapp-service.yaml
--'  15  15  ~/services/webapp-service.yaml
--'  14  16  ~/services/webapp-service.yaml
--'  18  0  ~/services/webapp-service.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  36  56  ~/pods/first-pod.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  36  56  ~/pods/first-pod.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/pods.yaml
+-'  1  0  ~/pods/pods.yaml
+-'  1  0  ~/mkdir
+-'  11  0  ~/pods/pods.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  36  56  ~/pods/first-pod.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  36  56  ~/pods/first-pod.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  19  15  ~/pods/first-pod.yaml
+-'  6  8  ~/pods/first-pod.yaml
+-'  11  65  ~/pods/first-pod.yaml
+-'  9  65  ~/pods/first-pod.yaml
+-'  10  65  ~/pods/first-pod.yaml
+-'  8  65  ~/pods/first-pod.yaml
+-'  36  56  ~/pods/first-pod.yaml
+-'  25  0  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/first-pod.yaml
+-'  35  56  ~/pods/first-pod.yaml
+-'  1  0  ~/pods/pods.yaml
+-'  1  0  ~/mkdir
+-'  11  0  ~/pods/pods.yaml
+-'  16  0  ~/services/webapp-service.yaml
 
 # History of marks within files (newest to oldest):
+
+> ~/replicas/repilicawebapp.yaml
+	"	9	12
+	^	9	13
+	.	9	12
+	+	19	0
+	+	9	12
+
+> ~/services/queue.yaml
+	"	16	0
+	^	16	0
+	.	15	0
+	+	15	0
+
+> ~/services/webapp-service.yaml
+	"	16	0
+	^	16	0
+	.	17	0
+	+	14	15
+	+	12	20
+	+	9	13
+	+	17	16
+	+	17	21
+	+	17	13
+	+	17	0
+	+	17	15
+	+	17	20
+	+	16	0
+	+	9	0
+	+	17	0
+
+> ~/pods/pods.yaml
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	14
+	+	1	15
+	+	1	14
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	5
+	+	1	5
+	+	1	7
+	+	1	3
+	+	1	5
+	+	1	5
+	+	1	7
+	+	1	14
+	+	1	16
+	+	1	14
+	+	1	15
+	+	1	5
+	+	1	0
+	+	1	0
+	+	1	72
+	+	2	0
+	+	1	0
+
+> ~/mkdir
+	"	1	0
 
 > ~/pods/first-pod.yaml
 	"	25	0
@@ -92,18 +233,3 @@
 	+	34	14
 	+	35	56
 	+	25	0
-
-> ~/services/webapp-service.yaml
-	"	32	0
-	^	17	0
-	.	17	0
-	+	15	15
-	+	13	20
-	+	9	13
-	+	31	16
-	+	21	21
-	+	25	13
-	+	26	0
-	+	28	15
-	+	29	20
-	+	17	0
